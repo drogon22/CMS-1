@@ -1,0 +1,40 @@
+---
+layout: page
+---
+
+<body id="page-top " class="index" style="background-image:url({{site.url}}/img/background/{{page.back_image}}); background-size: cover; width:100%; height:auto; background-repeat: no-repeat; position:relative; background-attachment: fixed" >
+
+   <div id="particles-js"></div>
+   <div class="testimonials-clean">
+        <div class="container-fluid" id="particle">
+            <div class="intro">
+                <h2 class="text-center" style="color: rgb(251,255,45);">{{page.heading}} </h2>
+                <p class="text-center" style="color: #d3dce1;">{{page.description}}</p>
+            </div>
+            <div class="row people">
+
+                {%-for post in site.categories.testimony-%}
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">{{post.description}}</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="{{site.baseurl}}/img/testimony/{{post.img}}">
+                        <h5 class="name" style="color: rgb(217,210,41);">{{post.name}}</h5>
+                        <p class="title" style="color: rgb(211,220,225);">{{post.title}}</p>
+                    </div>
+                </div>
+                {%-endfor -%}
+
+
+
+
+
+                            </div>
+        </div>
+    </div>
+
+
+      
+        
+    
+        </body>

@@ -1,0 +1,65 @@
+---
+layout: page 
+---
+
+ <body id="page-top" class="index" style="background-image:url({{site.url}}/img/background/{{page.back_image}}); background-size: cover; width:100%; height:auto; background-repeat: no-repeat; position:relative ; background-attachment: fixed ">
+
+    <!-- About Section -->
+    
+   <div id="particles-js"></div>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Awards</h2>
+                    <h3 class="section-subheading text-muted">{{page.description}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+
+
+
+
+                        
+                {%-for post in site.categories.award-%}
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{site.baseurl}}/img/about/{{post.img}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>{{post.date| date: "%-d %B %Y"}}</h4>
+                                    <h4 class="subheading">{{post.name}}</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-panel">
+                                <div class="timeline-body">
+                                    <p class="text-muted">{{post.description}}</p>
+                                </div>
+                            </div>
+                        </li>
+                        {%-endfor -%}
+
+
+
+
+
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    </body>
