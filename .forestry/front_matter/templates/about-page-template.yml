@@ -8,15 +8,19 @@ fields:
 - type: text
   name: title
   label: title
+  default: About us 2
 - type: text
   name: permalink
   label: permalink
+  default: "/about_2"
 - type: file
   name: profile_image
   label: profile_image
+  default: "/uploads/id.png"
 - type: file
   name: back_image
   label: back_image
 - type: text
   name: heading
   label: heading
+  default: About others
